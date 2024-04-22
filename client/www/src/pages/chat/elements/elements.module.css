@@ -1,0 +1,202 @@
+/*Список чатов*/
+
+.sidebar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(20, 20, 20);
+    padding: 15px;
+    border-radius: 16px;
+}
+.sidebar h2 {
+    font-weight: 600;
+}
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.sidebar ul li {
+    padding: 10px 20px;
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    background-color: rgb(37, 37, 37);
+    cursor: pointer;
+}
+/*Тело чата*/
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    height: fit-content;
+    padding: 0 30px;
+}
+
+/*Шапка чата*/
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.header button {
+    background-color: rgb(255, 71, 71);
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*Тело чата*/
+
+.container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chatRecipient {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    height: fit-content;
+    padding: 10px 0;
+}
+.chatSender {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    height: fit-content;
+    padding: 10px 0;
+}
+
+.chatRecipient .user {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 300px;
+    align-self: flex-start;
+    height: fit-content;
+}
+.chatRecipient .user p {
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+    color: #838383;
+    display: flex;
+    flex-wrap: wrap;
+}
+.chatSender .user {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 300px;
+    align-self: flex-start;
+    height: fit-content;
+}
+
+.chatSender .user p {
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
+    color: #838383;
+    display: flex;
+    flex-wrap: wrap;
+}
+.user div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #141414;
+    border-radius: 12px;
+    height: fit-content;
+    max-width: 300px;
+}
+.chatSender .user div {
+    background-color: rgb(188, 255, 121);
+    align-self: flex-start;
+}
+.chatSender .user div  p {
+    color: #000;
+}
+
+.user div p {
+    color: #fff;
+}
+
+/*Отправка сообщений*/
+
+.messageBlock {
+    top: 90%;
+    position: fixed;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.messageBlock form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.messageBlock form input {
+    width: 80%;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid #141414;
+    outline: none;
+    transition: all .3s ease;
+    color: #fff;
+    border-radius: 14px;
+}
+.messageBlock form input:focus {
+    border: 2px solid chartreuse;
+}
+
+.messageBlock form button {
+    outline: none;
+    border: none;
+    background-color: chartreuse;
+    padding: 10px 30px;
+    border-radius: 12px;
+    color:  #141414;
+    font-weight: 600;
+}
+
